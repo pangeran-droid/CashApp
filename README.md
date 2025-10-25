@@ -64,22 +64,17 @@ https://github.com/pangeran-droid/CashApp.git
 cd CashApp
 ```
 
-2️⃣ Pindahkan folder ke:
-```bash
-C:/laragon/www/ atau htdocs/
-```
-
-3️⃣ Pasang Composer dependency (untuk export):
+2️⃣ Pasang Composer dependency (untuk export):
 ```bash
 composer install
 ```
 
-4️⃣ Import database:
+3️⃣ Import database:
 ```bash
 - Buka phpMyAdmin → Import `create_database.sql`
 ```
 
-5️⃣ Sesuaikan **koneksi.php**
+4️⃣ Sesuaikan **koneksi.php**
 ```bash
 $DB_HOST = "localhost";
 $DB_USER = "root";
@@ -87,7 +82,7 @@ $DB_PASS = "";
 $DB_NAME = "cashapp_db";
 ```
 
-6️⃣ Jalankan melalui browser:
+5️⃣ Jalankan melalui browser:
 ```bash
 http://localhost/CashApp
 ```
