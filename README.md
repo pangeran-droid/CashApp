@@ -61,16 +61,17 @@ Tabel:
 1️⃣ Clone / Download repository  
 ```bash
 https://github.com/pangeran-droid/CashApp.git
+cd CashApp
 ```
 
-2️⃣ Pasang Composer dependency (untuk export):
-```bash
-composer install
-```
-
-3️⃣ Pindahkan folder ke:
+2️⃣ Pindahkan folder ke:
 ```bash
 C:/laragon/www/ atau htdocs/
+```
+
+3️⃣ Pasang Composer dependency (untuk export):
+```bash
+composer install
 ```
 
 4️⃣ Import database:
