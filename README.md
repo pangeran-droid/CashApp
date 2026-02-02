@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/favicon.png" alt="CashApp Logo" width="120">
+
 # CashApp - Simple POS System
 
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777bb4?style=for-the-badge&logo=php)](https://www.php.net/)
