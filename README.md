@@ -1,106 +1,105 @@
-<h1 align="center">
-  💰 CashApp - Aplikasi Kasir Sederhana
-</h1>
+<div align="center">
 
-<p align="center">
-  Sistem Kasir berbasis Web menggunakan PHP Native + MySQL
-</p>
+# CashApp - Simple POS System
 
----
+[![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777bb4?style=for-the-badge&logo=php)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479a1?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 📌 Fitur Utama
+**CashApp** is a web-based cashier application developed using **PHP Native** and **MySQL**. 
+It provides an efficient workflow for small businesses to manage inventory and sales.
 
-✅ Login & Manajemen Pengguna  
-✅ CRUD Produk  
-✅ Input Satuan & Kategori sudah tersedia  
-✅ Kasir & Cart dalam satu halaman  
-✅ Pencarian Produk (Auto Suggest)  
-✅ Transaksi otomatis update stok  
-✅ Laporan Penjualan + Export ke PDF & Excel  
-✅ Hitung kembalian otomatis  
-✅ Keuntungan tercatat pada detail transaksi  
-✅ Dashboard & Grafik Laporan  
+</div>
 
 ---
 
-## 🛠️ Teknologi
+## Key Features
 
-| Teknologi | Digunakan Untuk |
+**User Authentication** – Secure login and user role management.
+**Product CRUD** – Create, Read, Update, and Delete products easily.
+**Unit & Category Management** – Organized product classification.
+**Unified POS Interface** – Handle transactions and shopping carts on a single page.
+**Live Product Search** – Fast searching with Auto-Suggest functionality.
+**Auto Stock Sync** – Inventory levels update automatically after every transaction.
+**Financial Reporting** – Detailed sales reports with **PDF & Excel Export** support.
+**Automated Change Calculator** – Minimize human error during payments.
+**Profit Tracking** – Profits are recorded and visible in transaction details.
+**Analytics Dashboard** – Visualize sales data with interactive charts.
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
 |----------|----------------|
-| PHP Native | Logic Backend |
-| MySQL | Database |
-| Bootstrap 5 | UI Styling |
-| SweetAlert2 | Notifikasi |
-| DOMPDF | Export PDF |
-| PhpSpreadsheet | Export Excel |
+| **PHP Native** | Backend Logic |
+| **MySQL** | Database Management |
+| **Bootstrap 5** | Responsive UI Styling |
+| **SweetAlert2** | Interactive Notifications |
+| **DOMPDF** | PDF Report Generation |
+| **PhpSpreadsheet** | Excel Export Engine |
 
 ---
 
-## 🧩 Database
+## Database Schema
 
-Database bernama: **`cashapp_db`**
+Database Name: **`cashapp_db`**
 
-📌 Import file SQL untuk membuat struktur database:
+To set up the structure, import the SQL file located at: `sql/create_database.sql`
 
-(`sql/create_database.sql`)
-
-Tabel:
-
-| Tabel | Fungsi |
+| Table | Description |
 |------|--------|
-| users | Login |
-| produk | Data barang |
-| jual | Header transaksi |
-| rinci_jual | Detail transaksi |
-| laporan | Laporan Penjualan |
+| `users` | Handles authentication and user data |
+| `produk` | Inventory/Product information |
+| `jual` | Transaction headers (date, total, etc.) |
+| `rinci_jual` | Transaction details (items sold) |
+| `laporan` | Compiled sales data for reporting |
 
 ---
 
-## 🚀 Cara Install & Jalankan
+## Installation Guide
 
-1️⃣ Clone / Download repository  
+**Clone the repository**
 ```bash
-https://github.com/pangeran-droid/CashApp.git
+git clone https://github.com/pangeran-droid/CashApp.git
 cd CashApp
 ```
 
-2️⃣ Pasang Composer dependency (untuk export):
+**Install Composer dependencies** (Required for Exports)
 ```bash
 composer install
 ```
 
-3️⃣ Import database:
-```bash
-- Buka phpMyAdmin → Import `create_database.sql`
-```
+**Import the Database**
+- Open **phpMyAdmin**.
+- Create a new database named `cashapp_db`.
+- Import the `sql/create_database.sql` file.
 
-4️⃣ Sesuaikan **koneksi.php**
-```bash
+**Configure Database Connection** Edit `koneksi.php` to match your local environment:
+```php
 $DB_HOST = "localhost";
 $DB_USER = "root";
 $DB_PASS = "";
 $DB_NAME = "cashapp_db";
 ```
 
-5️⃣ Jalankan melalui browser:
+**Launch the App** Open your browser and navigate to:
 ```bash
 http://localhost/CashApp
 ```
 
 ---
 
-## 📦 Export Tools
+## Export Tools
 
-| File | Fungsi |
+| File | Function |
 |------|--------|
-| export_laporan_pdf.php | Export laporan ke PDF |
-| export_laporan_excel.php | Download Excel |
+| export_laporan_pdf.php | Generates a professional PDF report |
+| export_laporan_excel.php | Downloads sales data in .xlsx format |
 
 ---
 
-## 📝 Lisensi
-
-Proyek ini menggunakan lisensi **MIT**  
-Bebas digunakan untuk apa saja ✅
+## Lisensi
+**MIT**  
 
 ---
