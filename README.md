@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/favicon.png" alt="CashApp Logo" width="120">
+<img src="assets/img/favicon.png" alt="CashApp Logo" width="120">
 
 # CashApp - Simple POS System
 
